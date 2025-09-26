@@ -1,0 +1,103 @@
+body {
+    min-height: 100vh;
+    color: #fff;
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    background-image: url('../img//productos/fondo_tecnologico.jpg'), linear-gradient(135deg, #232526 0%, #414345 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    z-index: 0;
+    background: rgba(30,32,34,0.7);
+}
+
+.hero-section {
+    background: rgba(30, 32, 34, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+}
+.tech-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff; /* Título blanco */
+    text-shadow: 1px 1px 8px #000;
+}
+.lead {
+    color: #e0e0e0; /* Texto principal gris claro */
+}
+.btn-tech {
+    background: #fff;
+    color: #232526;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+}
+.btn-tech:hover {
+    background: #232526;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.glass {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.15);
+}
+.login-module {
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    margin-top: 2rem;
+    color: #fff;
+}
+.login-module label {
+    color: #fff;
+}
+.login-module input {
+    background: #232526;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.login-module input:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.25);
+}
+.text-muted, small {
+    color: #b0b0b0 !important;
+}
+.login-fixed {
+            position: fixed;
+            top: 30px;
+            right: 40px;
+            z-index: 100;
+            background: rgba(30,32,34,0.95);
+            border-radius: 12px;
+            padding: 1.2rem 1.5rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+        }
+        .login-fixed h5 {
+            color: #fff;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        .login-fixed .btn-tech {
+            width: 100%;
+        }
+        .hero-section .lead {
+            text-align: justify;
+        }
+.main-content {
+    min-height: 90vh;
+    position: relative;
+    z-index: 1;
+}
+

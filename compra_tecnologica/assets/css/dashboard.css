@@ -1,0 +1,35 @@
+/* Estilos específicos del dashboard admin */
+body.dashboard-body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #f5f7fa;
+    background: #121416 url('../img//productos/fondo_tecnologico.jpg') center/cover no-repeat fixed;
+}
+.dashboard-overlay { position: fixed; inset: 0; background: linear-gradient(135deg, rgba(10,12,15,0.85), rgba(25,29,35,0.85)); backdrop-filter: blur(4px); z-index: 0; pointer-events: none; }
+.layout-wrapper { position: relative; z-index: 1; display: flex; min-height: 100vh; }
+.sidebar { width: 250px; background: rgba(255,255,255,0.05); backdrop-filter: blur(6px); border-right: 1px solid rgba(255,255,255,0.08); padding: 1.5rem 1.2rem 2rem; display: flex; flex-direction: column; }
+.sidebar .brand { font-size: 1.3rem; font-weight: 600; letter-spacing: .5px; margin-bottom: 1.5rem; display: flex; align-items: center; gap: .5rem; }
+.sidebar .nav-link { color: #d0d6dd; padding: .55rem .75rem; border-radius: 6px; font-size: .95rem; font-weight: 500; display: block; transition: background .18s, color .18s; }
+.sidebar .nav-link:hover, .sidebar .nav-link.active { background: rgba(255,255,255,0.12); color: #fff; text-decoration: none; }
+.sidebar .logout { margin-top: auto; }
+.main-content { flex: 1; padding: 1.8rem 2rem 3rem; overflow-x: hidden; }
+.page-title { font-weight: 600; font-size: 1.6rem; margin: 0 0 1.2rem; display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
+.stat-cards { display: grid; gap: 1.1rem; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin-bottom: 2rem; }
+.stat-card { position: relative; background: linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04)); border: 1px solid rgba(255,255,255,0.15); border-radius: 14px; padding: 1rem 1.1rem 1rem; box-shadow: 0 4px 18px -4px rgba(0,0,0,0.4); overflow: hidden; }
+.stat-card:before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 85% 20%,rgba(255,255,255,0.25),transparent 60%); opacity: .55; pointer-events: none; }
+.stat-card h6 { font-size: .75rem; text-transform: uppercase; letter-spacing: .5px; margin: 0 0 .35rem; color: #c3ccd4; }
+.stat-card .stat-value { font-size: 1.9rem; font-weight: 600; line-height: 1.1; color: #fff; }
+.stat-trend { font-size: .7rem; margin-top: .35rem; color: #8fb8ff; display: inline-flex; align-items: center; gap: 4px; }
+.panel { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; padding: 1.1rem 1.2rem 1.25rem; margin-bottom: 1.4rem; }
+panel-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: .85rem; }
+.panel-header h5 { margin: 0; font-size: 1.05rem; font-weight: 600; }
+.table-dark-glass { --bs-table-bg: transparent; --bs-table-striped-bg: rgba(255,255,255,0.06); --bs-table-hover-bg: rgba(255,255,255,0.08); color: #dfe6ec; }
+.table-dark-glass thead th { color: #fff; font-weight: 500; border-bottom-color: rgba(255,255,255,0.15) !important; }
+.table-dark-glass tbody td { border-color: rgba(255,255,255,0.08) !important; }
+.last-products-table thead th, .last-products-table tbody td { color:#ffffff !important; }
+.chart-wrapper { position: relative; height: 260px; }
+@media (max-width: 992px) { .sidebar { width: 210px; } }
+@media (max-width: 768px) { .sidebar { position: fixed; left: -260px; top:0; bottom:0; transition: left .3s; z-index: 20; } .sidebar.open { left:0; } .main-content { padding-top: 4.5rem; } .mobile-toggle { position: fixed; top: .85rem; left: .85rem; z-index: 30; background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.35); color:#fff; padding:.55rem .7rem; border-radius: 8px; cursor:pointer; backdrop-filter: blur(6px);} }
+.badge-soft { background: rgba(255,255,255,0.15); color: #fff; font-weight: 400; }
+.footer-mini { margin-top: 2rem; font-size: .7rem; letter-spacing: .5px; text-align: center; opacity: .65; }

@@ -1,0 +1,27 @@
+/* Estilos compartidos para vistas públicas (login, registro, catálogo, gestión) */
+body.app-body { min-height:100vh; margin:0; font-family:'Segoe UI',Arial,sans-serif; color:#f1f5f9; background:#121416 url('../img/productos/fondo_tecnologico.jpg') center/cover no-repeat fixed; }
+body.app-body::before { content:""; position:fixed; inset:0; background:linear-gradient(135deg,rgba(12,14,18,0.88),rgba(30,34,40,0.88)); backdrop-filter:blur(4px); z-index:0; }
+.app-wrapper { position:relative; z-index:1; padding:3rem 1rem; }
+.nav-top { background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); backdrop-filter:blur(6px); border-radius:14px; padding:.85rem 1.25rem; display:flex; align-items:center; gap:1rem; margin-bottom:1.75rem; }
+.nav-top a { color:#e2e8f0; text-decoration:none; font-size:.9rem; font-weight:500; padding:.45rem .75rem; border-radius:8px; transition:background .18s; }
+.nav-top a:hover, .nav-top a.active { background:rgba(255,255,255,0.14); color:#fff; }
+.brand-mini { font-weight:600; letter-spacing:.5px; font-size:1rem; color:#fff; }
+.glass-box { background:linear-gradient(140deg,rgba(255,255,255,0.16),rgba(255,255,255,0.05)); border:1px solid rgba(255,255,255,0.18); border-radius:18px; padding:2rem 1.7rem; box-shadow:0 4px 24px -4px rgba(0,0,0,0.55); position:relative; overflow:hidden; }
+.glass-box:before { content:""; position:absolute; inset:0; background:radial-gradient(circle at 85% 15%,rgba(255,255,255,0.35),transparent 60%); opacity:.5; pointer-events:none; }
+.glass-title { font-size:1.5rem; font-weight:600; margin-bottom:1.2rem; color:#fff; }
+.form-control, .form-select, textarea.form-control { background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.25); color:#fff; }
+.form-control:focus, .form-select:focus, textarea.form-control:focus { background:rgba(255,255,255,0.12); color:#fff; box-shadow:0 0 0 .15rem rgba(255,255,255,0.18); border-color:rgba(255,255,255,0.55); }
+label { font-weight:500; font-size:.85rem; letter-spacing:.5px; text-transform:uppercase; color:#d5dde5; }
+.btn-soft { background:linear-gradient(135deg,#6366f1,#4f46e5); color:#fff; font-weight:500; border:none; letter-spacing:.3px; }
+.btn-soft:hover { filter:brightness(1.08); color:#fff; }
+.link-light-mini { color:#a5b4c3; text-decoration:none; }
+.link-light-mini:hover { color:#fff; }
+.table-glass { --bs-table-bg:transparent; --bs-table-striped-bg:rgba(255,255,255,0.06); --bs-table-hover-bg:rgba(255,255,255,0.09); color:#e2e8f0; }
+.table-glass thead th { color:#fff; border-bottom-color:rgba(255,255,255,0.18)!important; }
+.table-glass tbody td { border-color:rgba(255,255,255,0.1)!important; }
+.card-product { background:linear-gradient(150deg,rgba(255,255,255,0.14),rgba(255,255,255,0.05)); border:1px solid rgba(255,255,255,0.20); border-radius:18px; overflow:hidden; backdrop-filter:blur(4px); height:100%; display:flex; flex-direction:column; }
+.card-product img { object-fit:cover; height:170px; width:100%; filter:brightness(.85); }
+.card-product .card-body { padding:1rem 1rem 1.2rem; }
+.badge-soft { background:rgba(255,255,255,0.18); color:#fff; font-weight:400; }
+.footer-simple { margin-top:2rem; font-size:.7rem; letter-spacing:.5px; text-align:center; opacity:.55; }
+@media (max-width:576px){ .glass-box { padding:1.6rem 1.2rem; } .nav-top { flex-wrap:wrap; } }
